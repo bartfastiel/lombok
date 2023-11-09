@@ -10,8 +10,11 @@ public class Main {
         System.out.println("Humans: "+mySchool.getHumans());
         System.out.println("Dogs: "+mySchool.getDogs());
 
-
-        Dog wuffi = new Dog("Wuffi", 4, "askd1213");
+        Dog wuffi = Dog.builder()
+                .name("Wuffi")
+                .age(4)
+                .memberNumber("askd1213")
+                .build();
         System.out.println(wuffi);
 
         Dog wuffibla = wuffi.withName("Wuffibla");
