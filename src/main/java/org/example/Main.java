@@ -5,6 +5,7 @@ public class Main {
 
         DogSchool mySchool = new DogSchool();
         mySchool.addMember();
+        mySchool.setDogs(4);
         mySchool.addMember();
         System.out.println("Humans: "+mySchool.getHumans());
         System.out.println("Dogs: "+mySchool.getDogs());
